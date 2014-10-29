@@ -1,0 +1,25 @@
+***************************
+**  ECE 5362, Au 2014   ***
+**** Machine Problem 1 ****
+****   Benedict Lee    ****
+***************************
+*** Start fetch cycle ***
+ st=0 rt='[pc]-> mar'		imar rac=1 rn=3
+ st=1 rt='[[mar]]-> mdr'	read
+ st=2 rt='[mdr]-> ir'		omdr iir 
+ st=3 rt='[pc]+1 -> q'		rac=1 rn=3 ib p1 oadder
+ st=4 rt='[q] -> pc'		oq wac=1 wn=3
+     cond='ir1512' value=0 nst=10
+     cond='ir1512' value=1 nst=20
+     
+*** If any instructions are present except HALT or ADD, a halt will occur***
+*** HALT execution cycle ***
+ st=10 halt
+
+*** ADD execution cycle ***
+
+ st=20 rt='[source] -> t1'		rac=2 it1
+ st=21 rt='[t1] + [destination] -> q'	oa rac=3 ib oadder newc newv
+ st=22 rt='[q] ->destination'		oq wac=3 newz newn
+     nst=0
+

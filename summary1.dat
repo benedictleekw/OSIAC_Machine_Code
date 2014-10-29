@@ -1,0 +1,9 @@
+  At end of instruction 1
+    ac    x   sp   pc   t1    q   t2   t3   t4   t5  mar  mdr   ir cvzn
+  4270    1   10    1 2138 4270    0    0    0    0    0 1000 1000 0000 
+  At end of instruction 2
+    ac    x   sp   pc   t1    q   t2   t3   t4   t5  mar  mdr   ir cvzn
+  84E0    1   10    2 4270 84E0    0    0    0    0    1 1000 1000 0101 
+  At end of instruction 3
+    ac    x   sp   pc   t1    q   t2   t3   t4   t5  mar  mdr   ir cvzn
+   9C0    1   10    3 84E0  9C0    0    0    0    0    2 1000 1000 1100 
